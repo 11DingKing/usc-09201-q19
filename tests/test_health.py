@@ -14,7 +14,7 @@ class HealthTest(unittest.TestCase):
     """验证基础服务可以响应。"""
 
     def test_health(self) -> None:
-        server = create_server("127.0.0.1", 0)
+        server, _ = create_server("127.0.0.1", 0, path=None)
         thread = threading.Thread(target=server.serve_forever, daemon=True)
         thread.start()
         try:

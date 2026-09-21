@@ -12,3 +12,7 @@ __pycache__/
 *.db-wal
 *.db-shm
 .DS_Store
+
+# 运行时事件账本
+ledger-events.jsonl
+demo-ledger.jsonl
